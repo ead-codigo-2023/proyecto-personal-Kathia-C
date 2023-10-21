@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,4 +6,204 @@ body {
     text-decoration: none;
     list-style: none;
     font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background-image: url(Assets/Images/Fondo_img.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #FE7D89;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.contenido {
+    padding: 150px 150px 0px 0px;
+}
+
+.content h1 {
+    color: white;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.content p {
+    margin-top: 25px;
+    color: white;
+    text-transform: initial;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 35px 10px 0px 0px;
+    padding: 10px 20px;
+    color: #F6D341;
+    font-weight: bold;
+}
+
+.btn-1:hover {
+    color: #FE7D89;
+}
+
+.nosotros h2 {
+    margin-top: 40px;
+    color: #F6D341;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+}
+
+.nosotros h3 {
+    margin-top: 20px;
+    color: #F6D341;
+    text-transform: initial;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.nosotros p {
+    margin-top: 20px;
+    color: #373737;
+    text-transform: initial;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    width: 630px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.voluntariados h2 {
+    margin-top: 80px;
+    color: #FE7D89;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+}
+
+.voluntariados p {
+    margin-top: 20px;
+    color: #373737;
+    text-transform: initial;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    width: 630px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.voluntariados img {
+    width: 350px;
+}
+
+.voluntariados-1 {
+    display: flex;
+    justify-content: left;
+}
+
+.voluntariados-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.voluntariados-3 {
+    justify-content: right;
+}
+
+.donaciones {
+    padding: 80px 0px;
+}
+
+.donaciones img {
+    width: 500px;
+}
+
+.donaciones h2 {
+    margin-top: 40px;
+    color:  #85DDDF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: right;
+}
+
+.donaciones p {
+    margin-top: 20px;
+    color: #373737;
+    text-transform: initial;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    width: 630px;
+    text-align: left;
+    letter-spacing: 1px;
 }
