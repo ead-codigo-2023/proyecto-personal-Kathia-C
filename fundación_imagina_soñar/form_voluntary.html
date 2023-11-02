@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="style_form.css">
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <section class="container">
         <header>Inscripción de voluntario</header>
@@ -17,24 +15,20 @@
                 <label>Nombre completo</label>
                 <input type="text" placeholder="Ingresa el nombre completo" required/>
             </div>
-
             <div class="input-box">
                 <label>Correo electrónico</label>
-                <input type="text" placeholder="Ingresa tu correo elcetrónico" required/>
+                <input type="email" placeholder="Ingresa tu correo electrónico" required/>
             </div>
-            
-            <div class="column">
+            <div class="column1">
                 <div class="input-box">
                     <label>Número telefónico</label>
-                    <input type="number" placeholder="Ingresa tu número telefónico" required/>
+                    <input type="tel" placeholder="Ingresa tu número telefónico" required/>
                 </div>
-
                 <div class="input-box">
                     <label>Fecha de nacimiento</label>
                     <input type="date" placeholder="Ingresa tu fecha de nacimiento" required/>
                 </div>
             </div>
-
             <div class="gender-box">
                 <h3>Género</h3>
                 <div class="gender-option">
@@ -52,31 +46,41 @@
                     </div>
                 </div>
             </div>
-
             <div class="input-box addres">
                 <label>Dirreción</label>
                 <input type="text" placeholder="Ingresa tu dirreción" required/>
 
                 <div class="column">
-                    <div class="select-box">
-                        <select>
-                            <option hidden>País</option>
-                            <option>Chile</option>
-                            <option>Argentina</option>
-                            <option>Perú</option>
-                            <option>México</option>
-                        </select>
-                    </div>
+                    <input type="text" placeholder="Ingresa tu región" required/>
                     <input type="text" placeholder="Ingresa tu comuna" required/>
                 </div>
-                <div class="column">
-                <input type="text" placeholder="Ingresa tu región" required/>
-                <input type="number" placeholder="Ingresa tu código postal" required/>
-                </div>
             </div>
-
-            <button>Sumbit</button>
+            <div class="input-box">
+                <label>Mensaje</label>
+                <input type="mensaje" placeholder="Escribe un mensaje para la comunidad" cols="30" rows="10" required/>
+            </div>
+            <div class="button-modal">
+                <label for="btn-modal">
+                    Enviar
+                </label>
+            </div>
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+                <div class="content-modal">
+                    <h2>¡Muchas gracias por ser parte de esta Fundación!</h2>
+                    <p>Ahora como eres parte de esta familia los jovenes podran tener 
+                        unas vacaciones inolvidables y mágicas gracias a tu compromiso y 
+                        labor social.
+                        Te esperamos con los brazos abiertos.
+                    </p>
+                    <p><strong>Prontamente seras agragado al grupo de voluntariados.</strong></p>
+                    <div class="btn-cerrar">
+                        <label for="btn-modal">Cerrar</label>
+                    </div>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
+            </div>
         </form>
+    </section>
 </body>
-
 </html>
