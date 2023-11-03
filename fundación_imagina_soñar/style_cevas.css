@@ -95,133 +95,79 @@ header {
     line-height: 30px;
 }
 
-.btn-1 {
-    display: inline-block;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin: 35px 10px 0px 0px;
-    padding: 10px 20px;
-    color: #F6D341;
-    font-weight: bold;
+.gallery {
+    padding: 100px 0;
+    text-align: center;
 }
 
-.btn-1:hover {
-    color: #FE7D89;
+.gallery-content {
+    display: grid;
+    grid-template-columns: 290px 290px 290px 290px;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 20px;
 }
 
-.nosotros h2 {
-    margin-top: 40px;
-    color: #F6D341;
-    text-transform: uppercase;
-    font-weight: 600;
+.gallery-content img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.item-a {
+    grid-row: 1/3;
+}
+
+.item-b {
+    grid-column: 3/5;
+}
+
+.item-c {
+    grid-row: 2/4;
+}
+
+.item-d {
+    grid-column: 3/5;
+}
+
+h2 {
     font-size: 30px;
-    text-align: left;
+    color: #303030;
+    margin-bottom: 15px;
 }
 
-.nosotros h3 {
-    margin-top: 20px;
-    color: #F6D341;
-    text-transform: initial;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: left;
+.cards {
+    padding: 0 0 100px 0;
+    text-align: center;
 }
 
-.nosotros p {
-    margin-top: 20px;
-    color: #373737;
-    text-transform: initial;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    width: 630px;
-    text-align: left;
-    letter-spacing: 1px;
-}
-
-.voluntariados h2 {
-    margin-top: 80px;
-    color: #FE7D89;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: left;
-}
-
-.voluntariados p {
-    margin-top: 20px;
-    color: #373737;
-    text-transform: initial;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    width: 630px;
-    text-align: left;
-    letter-spacing: 1px;
-}
-
-.voluntariados img {
-    width: 350px;
+.cards-content {
+    display: flex;
+    justify-content: space-between;
     margin-top: 50px;
 }
 
-.voluntario {
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+.card-1 {
+    flex-basis: calc(33% -30px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 40px;
 }
 
-.btn-2 {
-    display: inline-block;
-    background-color: #FE7D89;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin: 35px 10px 0px 0px;
-    padding: 10px 20px;
-    color:white;
-    font-weight: bold;
+.card-1 img {
+    width: 45px;
+    margin-bottom: 10px;
 }
 
-.btn-2:hover {
-    color: #FE7D89;
-    background-color:white;
-}
-
-.donaciones {
-    padding: 80px 0px;
-    text-align: center;
-}
-
-.donacion {
-    text-align: left;
-    display: flex;
-}
-
-.donaciones h2 {
-    margin-bottom: 35px;
-    color:  #85DDDF;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.donacion p {
-    margin-bottom: 25px;
-    color: #373737;
-    text-transform: initial;
-    font-weight: normal;
+.card-1 h3 {
     font-size: 18px;
-    line-height: 20px;
-    width: 500px;
-    letter-spacing: 1px;
+    color: #101010;
+    margin-bottom: 10px;
 }
 
-.donaciones img {
-    width: 500px;
+.card-1 p {
+    margin: 0;
 }
-
 
 footer {
     padding: 200px 0px 30px 0px;
@@ -270,6 +216,40 @@ footer {
     color: #f5f5f5;
 }
 
+.actividades-txt h2{
+    color: #f5f5f5;
+    font-size: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 35px 10px 0px 0px;
+    padding: 10px 20px;
+    color: #F6D341;
+    font-weight: bold;
+}
+
+.btn-1:hover {
+    color: #FE7D89;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 35px 10px 0px 0px;
+    padding: 10px 20px;
+    color: #F6D341;
+    font-weight: bold;
+}
+
+.btn-1:hover {
+    color: #FE7D89;
+}
 hr{
     margin: 45px 0px;
     border: 0.5px solid #f5f5f5;
@@ -356,82 +336,7 @@ hr{
         width: 280px;
     }
 
-    .nosotros {
-        padding: 0px 30px 30px 30px;
-    }
 
-    .nosotros h2 {
-        margin-bottom: 15px;
-        text-align: left;
-    }
-
-    .nosotro {
-        flex-direction: column;
-    }
-
-    .nosotro img {
-        display: none;
-    }
-
-    .nosotro-1 h3 {
-        text-align: left;
-        margin: 0px 0px 25px 0px;
-    }
-
-    .nosotro-1 p {
-        text-align: left;
-        margin: 0px 0px 25px 0px;
-    }
-
-    .voluntariados {
-        padding: 0px 30px 30px 30px;
-    }
-
-    .voluntariado h2 {
-        margin-bottom: 15px;
-        text-align: left;
-    }
-
-    .voluntariado p {
-        text-align: left;
-        margin: 0px 0px 25px 0px;
-    }
-
-    .voluntariados .container {
-        flex-direction: column;
-        padding: 50px 30px 0px 30px;
-    }
-
-    .voluntariado .container {
-        margin-bottom: 50px;
-    }
-
-    .donaciones {
-        padding: 0px 30px 30px 30px;
-    }
-
-    .donaciones h2 {
-        margin-bottom: 15px;
-        text-align: left;
-    }
-
-    .donacion {
-        flex-direction: column;
-    }
-
-    .donaciones img {
-        display: none;
-    }
-
-    .donaciones-1 h3 {
-        text-align: left;
-        margin: 0px 0px 25px 0px;
-    }
-
-    .donaciones-1 p {
-        text-align: left;
-        margin: 0px 0px 25px 0px;
-    }
 
     footer {
         padding: 0px 30px 30px 30px;
@@ -464,6 +369,4 @@ hr{
         flex-direction: column;
     }
 
-
-
-}
+    }
