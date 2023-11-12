@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-image: url(assets/images_page_home/fondo_img.png);
+    background-image: url(assets/images_page_home/fondo1_img.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,10 +38,14 @@ header {
     z-index: 1000;
 }
 
+input{
+    display: none;
+}
+
 .menu .logo {
     font-weight: 700;
     font-size: 25px;
-    color: white;
+    color: #222222;
 }
 
 .menu .navbar ul li {
@@ -53,12 +57,12 @@ header {
     font-weight: bold;
     font-size: 18px;
     padding: 20px;
-    color: white;
+    color: #222222;
     display: block;
 }
 
 .menu .navbar ul li a:hover {
-    color: #FE7D89;
+    color: #000000;
 }
 
 .menu-icono {
@@ -74,30 +78,59 @@ header {
     display: flex;
 }
 
+.header-content img {
+    width: 350px;
+    margin-left: 30px ;
+}
+
 .contenido {
     padding: 150px 150px 0px 0px;
 }
 
 .content h1 {
-    color: white;
+    color: #222222;
     font-size: 45px;
     text-transform: uppercase;
     font-weight: 600;
     line-height: 55px;
+    margin-top: 40px;
 }
 
 .content p {
     margin-top: 25px;
-    color: white;
+    color:  #222222;
     text-transform: initial;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
+    width: 90%;
 }
 
 .gallery {
     padding: 100px 0;
-    text-align: center;
+    text-align: left;
+}
+
+.gallery h2 {
+    margin-top: 40px;
+    color: #df3c8e;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    display: inline-block;
+}
+
+
+.gallery p {
+    margin-top: 20px;
+    margin-bottom: 60px ;
+    color: #222222;
+    text-transform: initial;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    width: 70%;
+    letter-spacing: 1px;
 }
 
 .gallery-content {
@@ -136,45 +169,45 @@ h2 {
     margin-bottom: 15px;
 }
 
-.cards {
-    padding: 0 0 100px 0;
-    text-align: center;
-}
-
-.cards-content {
+.valores {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(135, 141, 214, 0.3);
 }
 
-.card-1 {
-    flex-basis: calc(33% -30px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 40px;
+.valores img {
+    width: 10%;
 }
 
-.card-1 img {
-    width: 45px;
+.valores h3 {
+    color: #0ea8c1;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    display: inline-block;
     margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
 }
 
-.card-1 h3 {
+.valores p {
+    color: #222222;
     font-size: 18px;
-    color: #101010;
-    margin-bottom: 10px;
-}
-
-.card-1 p {
-    margin: 0;
+    text-align: left;
+    text-transform: initial;
+    padding-top: 15px;
+    width: 100%;
 }
 
 footer {
     padding: 200px 0px 30px 0px;
-    background-image: url(assets/images_page_home/footer_img.png);
+    background-image: url(assets/images_page_home/footer1_img.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 40px;
 }
 
 .contacto {
@@ -187,12 +220,12 @@ footer {
     background-color: #f5f5f5;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
     margin: 0px 15px 0px 0px ;
-    color: #373737;
+    color: #222222;
 }
 
 .contacto-content h2 {
     margin-bottom: 10px;
-    color: #F6D341;
+    color: #fe8100;
     text-transform: initial;
     font-weight: 600;
     font-size: 25px;
@@ -201,64 +234,65 @@ footer {
 
 .correo {
     font-size: 14px;
-    color: #FE7D89 !important;
+    color: #e47403 !important;
     margin-bottom: 10px;
 }
 
 .contacto-content p {
     font-size: 16px;
-    color: #373737;
+    color: #222222;
     text-transform: initial;
 }
 
 .actividades-txt {
-    margin-left: 35px;
-    color: #f5f5f5;
+    padding: 35px;
+    text-align: center;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    margin: 0px 15px 0px 0px ;
+    color: #222222;
 }
 
-.actividades-txt h2{
-    color: #f5f5f5;
+.actividades-txt h2 {
+    margin-bottom: 10px;
+    color: #df3c8e;
+    text-transform: initial;
+    font-weight: 600;
     font-size: 25px;
+    text-align: center;
+}
+
+.actividades-txt p {
+    font-size: 16px;
+    color: #222222;
+    text-transform: initial;
 }
 
 .btn-1 {
     display: inline-block;
-    background-color: white;
+    background-color:#df3c8e;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 35px 10px 0px 0px;
     padding: 10px 20px;
-    color: #F6D341;
+    color: white;
     font-weight: bold;
 }
 
 .btn-1:hover {
-    color: #FE7D89;
+    color: white;
+    background-color: #e0137a;
 }
 
-.btn-1 {
-    display: inline-block;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin: 35px 10px 0px 0px;
-    padding: 10px 20px;
-    color: #F6D341;
-    font-weight: bold;
-}
-
-.btn-1:hover {
-    color: #FE7D89;
-}
 hr{
     margin: 45px 0px;
-    border: 0.5px solid #f5f5f5;
+    border: 0.5px solid #222222;
 }
 
 .enlaces {
     display: flex;
     justify-content: space-between;
-    color: #f5f5f5 ;
+    color: #222222 ;
 }
 
 .enlaces h3 {
@@ -272,10 +306,11 @@ hr{
 .enlace li a {
     display: block;
     margin: 20px;
-    color: #f5f5f5;
+    color: #222222;
+    font-weight: bold;
 }
 .enlace li a:hover {
-    color: #F6D341;
+    color: #000000;
 }
 
 @media (max-width:991px) {
@@ -336,6 +371,28 @@ hr{
         width: 280px;
     }
 
+    .valores {
+        padding: 0px 30px 30px 30px;
+    }
+
+    .valores h3 {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .valores p {
+        text-align: left;
+        margin: 0px 0px 25px 0px;
+    }
+
+    .valores .container {
+        flex-direction: column;
+        padding: 50px 30px 0px 30px;
+    }
+
+    .valores .container {
+        margin-bottom: 50px;
+    }
 
 
     footer {
@@ -345,6 +402,11 @@ hr{
     .contacto {
         flex-direction: column;
         text-align: center;
+    }
+
+    .contacto-content {
+        margin: 0px 0px 15px 0px;
+        padding-top: 30px;
     }
 
     .contacto-correo {
